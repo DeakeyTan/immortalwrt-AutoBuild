@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
-echo 'src-git helloworld https://github.com/fw876/helloworld.git' >>feeds.conf.default
-echo 'src-git luci-app-adguardhome https://github.com/rufengsuixing/luci-app-adguardhome.git' >>feeds.conf.default
+#echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
+#echo 'src-git helloworld https://github.com/fw876/helloworld.git' >>feeds.conf.default
+#echo 'src-git luci-app-adguardhome https://github.com/rufengsuixing/luci-app-adguardhome.git' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
