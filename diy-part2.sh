@@ -22,7 +22,7 @@
 #预置OpenClash内核和数据
 if [ -d *"OpenClash"* ]; then
 	CORE_VER="https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/core_version"
-	CORE_TYPE=$(echo $WRT_TARGET | egrep -iq "64|86" && echo "amd64" || echo "arm64")
+	CORE_TYPE="amd64"
 	CORE_TUN_VER=$(curl -sfL $CORE_VER | sed -n "2{s/\r$//;p;q}")
 
 	CORE_DEV="https://github.com/vernesong/OpenClash/raw/core/dev/dev/clash-linux-$CORE_TYPE.tar.gz"
