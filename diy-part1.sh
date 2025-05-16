@@ -16,5 +16,4 @@
 # Add a feed source
 echo 'src-git openclash https://github.com/vernesong/OpenClash.git;dev' >>feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld.git' >>feeds.conf.default
-# echo 'src-git adguardhomeofficial https://github.com/AdguardTeam/AdGuardHome.git' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
