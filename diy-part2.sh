@@ -19,9 +19,6 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-#安装adguardhome
-curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v
-
 #预置OpenClash内核和数据
 CORE_VER="https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/core_version"
 CORE_TYPE="amd64-v3"
