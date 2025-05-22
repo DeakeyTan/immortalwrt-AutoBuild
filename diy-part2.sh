@@ -31,7 +31,7 @@ GEO_SITE="https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geosite.da
 GEO_IP="https://github.com/Loyalsoldier/v2ray-rules-dat/raw/release/geoip.dat"
 # GEO_META="https://github.com/MetaCubeX/meta-rules-dat/raw/release/geoip.metadb"
 
-cd /feeds/openclash/luci-app-openclash/root/etc/openclash/
+cd feeds/openclash/luci-app-openclash/root/etc/openclash/
 
 curl -sfL -o Country.mmdb $GEO_MMDB
 curl -sfL -o GeoSite.dat $GEO_SITE
