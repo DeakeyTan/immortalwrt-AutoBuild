@@ -118,6 +118,17 @@ jobs:
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a -f
 
+    - name: Disable default luci-app-openclash
+      run: |
+        # 假设默认的 luci-app-openclash 位于 feeds/luci/applications/luci-app-openclash
+        # 检查路径是否正确，如果不对，请根据你的实际情况调整
+        if [ -d "feeds/luci/applications/luci-app-openclash" ]; then
+          echo "Disabling luci-app-openclash from default luci feed..."
+          mv feeds/luci/applications/luci-app-openclash feeds/luci/applications/luci-app-openclash_DISABLED
+        else
+          echo "Default luci-app-openclash not found at expected path. Skipping disable."
+        fi
+
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
