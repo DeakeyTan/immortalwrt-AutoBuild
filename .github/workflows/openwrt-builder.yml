@@ -183,7 +183,7 @@ jobs:
         name: OpenWrt_buildinfo${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ./artifact/buildinfo/
 
-    - name: Upload package
+    - name: Upload package directory
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
