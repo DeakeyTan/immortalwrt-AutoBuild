@@ -44,4 +44,4 @@ curl -sfL -o meta.tar.gz $CORE_MATE && tar -zxf meta.tar.gz && mv -f clash clash
 
 chmod +x ./clash* && rm -rf ./*.gz
 
-echo "openclash date has been updated!"
+echo "openclash data has been updated!"
