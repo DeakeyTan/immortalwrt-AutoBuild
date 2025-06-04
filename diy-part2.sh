@@ -19,6 +19,9 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
+# Resolve rust error
+sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
+
 #预置OpenClash内核和数据
 CORE_VER="https://raw.githubusercontent.com/vernesong/OpenClash/core/dev/core_version"
 CORE_TYPE="amd64-v3"
