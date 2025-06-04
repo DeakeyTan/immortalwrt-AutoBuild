@@ -17,6 +17,3 @@
 # echo 'src-git openclash https://github.com/vernesong/OpenClash.git;dev' >>feeds.conf.default
 # echo 'src-git helloworld https://github.com/fw876/helloworld.git' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-
-# Resolve rust error
-sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
