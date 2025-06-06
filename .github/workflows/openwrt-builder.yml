@@ -18,10 +18,6 @@ on:
   release:
     types: [released]
   workflow_dispatch:
-    tags:
-      description: 'AutoBuild'
-      required: false
-      type: boolean
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
