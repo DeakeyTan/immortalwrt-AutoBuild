@@ -121,6 +121,7 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
+           ./scripts/feeds install python3-netifaces libev lm-sensors luci-app-samba4 wsdd2 libpam libtirpc liblzma libnetsnmp glib2 libgpiod 
 
     - name: Load custom configuration
       run: |
