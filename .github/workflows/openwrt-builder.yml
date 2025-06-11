@@ -109,7 +109,7 @@ jobs:
     - name: Clone source code
       working-directory: ./
       run: |
-        git clone -b master --single-branch --filter=blob:none https://github.com/immortalwrt/immortalwrt
+        git clone -b master --single-branch --filter=blob:none https://github.com/immortalwrt/immortalwrt openwrt
 
     - name: Load custom feeds
       run: |
