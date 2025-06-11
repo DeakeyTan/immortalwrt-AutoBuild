@@ -117,10 +117,10 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a -f
+      run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a && ./scripts/feeds install python3-netifaces libev lm-sensors luci-app-samba4 wsdd2 libpam libtirpc liblzma libnetsnmp glib2 libgpiod 
+      run: cd openwrt && ./scripts/feeds install -a 
 
     - name: Load custom configuration
       run: |
